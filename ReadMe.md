@@ -7,6 +7,25 @@ The project provides an interactive GUI that allows users to train models and ru
 
 ---
 
+# Project Status
+
+This project is currently a **research prototype**.
+
+The core architecture for sign language recognition has been implemented, including:
+
+- Dataset loading and preprocessing
+- CNN model definition
+- Multi-model training pipeline
+- Model evaluation
+- Real-time camera inference pipeline
+- GUI launcher using Pygame
+
+Some components are still under active development and may require additional integration work before the system can run fully end-to-end.
+
+The project is intended as an **experimental exploration of real-time sign language recognition using deep learning**.
+
+---
+
 # Features
 
 - Real-time **sign language detection using a webcam**
@@ -41,22 +60,23 @@ SignSens
 
 The system works in three major stages:
 
-### 1. Dataset Loading
+## 1. Dataset Loading
 
 The dataset is automatically downloaded using KaggleHub and loaded into tensors.
 
-The dataset used is:
+Dataset used:
 
 Sign Language MNIST
 
 Each image:
-- Resolution: **28 x 28**
+
+- Resolution: **28 × 28**
 - Grayscale
 - Represents one alphabet sign
 
 ---
 
-### 2. Model Training
+## 2. Model Training
 
 A **Convolutional Neural Network (CNN)** is trained to classify sign language images.
 
@@ -87,7 +107,7 @@ Trained_Model.pth
 
 ---
 
-### 3. Real-Time Sign Detection
+## 3. Real-Time Sign Detection
 
 Once a trained model exists, the system:
 
@@ -172,13 +192,13 @@ Convolutional Neural Network (CNN)
 Input:
 
 ```
-28 x 28 grayscale image
+28 × 28 grayscale image
 ```
 
 Output:
 
 ```
-Predicted alphabet character (A–Z excluding one letter depending on dataset)
+Predicted alphabet character
 ```
 
 Optimizer:
@@ -235,8 +255,10 @@ The dataset contains labeled images of hand gestures representing alphabet chara
 
 Developed as a **machine learning and computer vision project** for sign language recognition.
 
+Project Name:
+
 ```
-Project Name: SignSens
+SignSens
 ```
 
 ---
